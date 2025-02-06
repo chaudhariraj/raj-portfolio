@@ -1,0 +1,233 @@
+/* Hero Section Styling */
+.hero-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.highlight-text-background {
+    background-color: #007bff;
+    border-radius: 5%;
+}
+
+.highlight-text {
+    color: #007bff;
+}
+
+.role-text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffcc00;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Profile Image Container */
+.profile-container {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+/* Circular Profile Image */
+.profile-img {
+    width: 270px;
+    height: 270px;
+    border-radius: 10%;
+    border: 5px solid transparent;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0px 0px 20px rgba(0, 123, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* L-Shaped Border Animation */
+.profile-container::before,
+.profile-container::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 5px solid #007bff;
+    z-index: 1;
+}
+
+.profile-container::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.profile-container::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+/* Buttons */
+button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+/* Ensure full viewport height and flex layout */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Let main content grow and take available space */
+  .content {
+    flex: 1;
+    padding-top: 10px;
+  }
+  
+  /* Make the footer stick at the bottom */
+  footer {
+    background-color: #222; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+  }
+  /* Transparent Card Styling */
+.transparent-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .transparent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Rounded corners for cards */
+  .border-radius-lg {
+    border-radius: 20px;
+  }
+  
+  /* Button styling */
+  button {
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  
+  /* Progress Bar Styling */
+  .progress-bar {
+    border-radius: 8px;
+    background-color: #4caf50;
+  }
+  
+  .progress-bar-1 {
+    background-color: #007bff;
+  }
+  .progress-bar-2 {
+    background-color: #f39c12;
+  }
+  .progress-bar-3 {
+    background-color: #ff5733;
+  }
+  
+  /* Header and Subtext */
+  h5 {
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  h2,
+  h3 {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Skills Section */
+  .skills {
+    margin-top: 50px;
+    text-align: center;
+  }
+  /* Project Card Styles */
+.project-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Modal Styling */
+.modal-content {
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-footer {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
